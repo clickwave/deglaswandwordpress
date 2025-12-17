@@ -1,0 +1,34 @@
+# WordPress config met database credentials
+wp-config.php
+
+# Uploads (media bestanden)
+wp-content/uploads/
+
+# Cache en backup bestanden
+wp-content/cache/
+wp-content/backups/
+wp-content/upgrade/
+wp-content/w3tc-config/
+
+# Debug en log bestanden
+wp-content/debug.log
+*.log
+
+# Local development
+local-xdebuginfo.php
+.mcp.json
+.claude/
+.playwright-mcp/
+
+# OS bestanden
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Grote 3D modellen (te groot voor GitHub)
+*.glb

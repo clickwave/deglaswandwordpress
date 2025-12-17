@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "extractedFrom": "https://deglaswand.nl",
+    "extractedDate": "2025-12-02",
+    "viewport": "1200x731"
+  },
+  "colors": {
+    "primary": "#1f3d58",
+    "primaryRgb": "rgb(31, 61, 88)",
+    "secondary": "#232d34",
+    "secondaryRgb": "rgb(35, 45, 52)",
+    "accent": "#ee6b4e",
+    "accentRgb": "rgb(238, 107, 78)",
+    "background": "#f9f9f9",
+    "backgroundAlt1": "#fafafa",
+    "backgroundAlt2": "#f2f2f2",
+    "backgroundAlt3": "#526668",
+    "white": "#ffffff",
+    "text": "#191919",
+    "textLight": "#ffffff",
+    "textOnPrimary": "#ffffff",
+    "linkDefault": "#1f3d58"
+  },
+  "typography": {
+    "fontFamily": {
+      "heading": "Outfit, sans-serif",
+      "body": "Questrial, system-ui, 'Segoe UI', Roboto, Arial, sans-serif",
+      "button": "Questrial, system-ui, 'Segoe UI', Roboto, Arial, sans-serif"
+    },
+    "fontSize": {
+      "h1": "88px",
+      "h1Mobile": "48px",
+      "h2": "48px",
+      "h2Large": "104px",
+      "h3": "32px",
+      "body": "16px",
+      "bodyLarge": "20px",
+      "small": "12px",
+      "button": "16px",
+      "nav": "16px",
+      "icon": "18px"
+    },
+    "fontWeight": {
+      "normal": "400",
+      "medium": "500",
+      "bold": "700"
+    },
+    "lineHeight": {
+      "h1": "93.4px",
+      "h1Ratio": "1.06",
+      "h2": "61.4px",
+      "h2Ratio": "1.28",
+      "body": "24px",
+      "bodyRatio": "1.5",
+      "bodyLarge": "36px",
+      "bodyLargeRatio": "1.8",
+      "tight": "1.2",
+      "normal": "1.5",
+      "relaxed": "1.75"
+    },
+    "letterSpacing": {
+      "normal": "normal",
+      "tight": "-0.01em",
+      "wide": "0.02em"
+    }
+  },
+  "spacing": {
+    "sectionPadding": {
+      "horizontal": "40px",
+      "vertical": "80px"
+    },
+    "containerMaxWidth": "1185px",
+    "containerPadding": "40px",
+    "gridGap": "8.0756%",
+    "elementSpacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "24px",
+      "lg": "32px",
+      "xl": "48px",
+      "xxl": "64px"
+    }
+  },
+  "borderRadius": {
+    "none": "0px",
+    "small": "3px",
+    "medium": "8px",
+    "large": "16px",
+    "full": "9999px"
+  },
+  "shadows": {
+    "none": "none",
+    "small": "0 2px 4px rgba(0, 0, 0, 0.1)",
+    "medium": "0 4px 6px rgba(0, 0, 0, 0.1)",
+    "large": "0 10px 15px rgba(0, 0, 0, 0.1)",
+    "xl": "0 20px 25px rgba(0, 0, 0, 0.15)"
+  },
+  "components": {
+    "button": {
+      "primary": {
+        "backgroundColor": "#ee6b4e",
+        "color": "#ffffff",
+        "border": "2px solid #ee6b4e",
+        "borderRadius": "3px",
+        "padding": "16px",
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "cursor": "pointer",
+        "transition": "all 0.3s ease"
+      },
+      "hover": {
+        "backgroundColor": "#d95a3d",
+        "borderColor": "#d95a3d"
+      }
+    },
+    "header": {
+      "height": "70px",
+      "backgroundColor": "transparent",
+      "position": "sticky",
+      "boxShadow": "none"
+    },
+    "navigation": {
+      "display": "inline-flex",
+      "fontSize": "16px",
+      "linkColor": "#1f3d58",
+      "linkHoverColor": "#ee6b4e"
+    },
+    "card": {
+      "backgroundColor": "#ffffff",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "padding": "24px"
+    },
+    "featureCard": {
+      "backgroundColor": "transparent",
+      "padding": "24px",
+      "display": "grid",
+      "gap": "8.0756%",
+      "iconSize": "18px"
+    }
+  },
+  "structure": {
+    "hero": {
+      "description": "Full-width hero section with background image overlay",
+      "minHeight": "661px",
+      "backgroundColor": "#1f3d58",
+      "backgroundOverlay": "linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 100%)",
+      "display": "flex",
+      "alignItems": "center",
+      "padding": "0 40px",
+      "textColor": "#ffffff",
+      "layout": {
+        "contentWidth": "50%",
+        "textAlign": "left",
+        "headingSize": "88px",
+        "subtitleSize": "20px",
+        "buttonMarginTop": "24px"
+      }
+    },
+    "featureGrid": {
+      "description": "4-column grid layout for feature cards",
+      "columns": 4,
+      "gap": "8.0756%",
+      "backgroundColor": "#fafafa",
+      "cardLayout": {
+        "display": "block",
+        "textAlign": "center",
+        "iconSize": "48px",
+        "headingSize": "18px",
+        "descriptionSize": "12px"
+      }
+    },
+    "contentSection": {
+      "description": "Alternating background sections with centered content",
+      "maxWidth": "1185px",
+      "padding": "80px 40px",
+      "backgroundColors": ["#f9f9f9", "#ffffff", "#1f3d58", "#232d34"]
+    },
+    "productGrid": {
+      "description": "Product listing section",
+      "display": "block",
+      "layout": "single-column",
+      "cardPadding": "24px",
+      "cardBorderRadius": "0px",
+      "imagePosition": "right"
+    },
+    "testimonials": {
+      "description": "Horizontal scrolling testimonial cards",
+      "backgroundColor": "#f2f2f2",
+      "cardBackgroundColor": "#ffffff",
+      "cardPadding": "32px",
+      "cardBorderRadius": "0px"
+    },
+    "footer": {
+      "backgroundColor": "#fafafa",
+      "color": "#191919",
+      "padding": "40px",
+      "textAlign": "center"
+    }
+  },
+  "breakpoints": {
+    "mobile": "0px",
+    "tablet": "768px",
+    "desktop": "1024px",
+    "wide": "1200px",
+    "ultraWide": "1440px"
+  },
+  "animations": {
+    "transition": {
+      "fast": "150ms ease",
+      "normal": "300ms ease",
+      "slow": "500ms ease"
+    },
+    "easing": {
+      "default": "ease",
+      "in": "ease-in",
+      "out": "ease-out",
+      "inOut": "ease-in-out"
+    }
+  },
+  "notes": {
+    "fonts": [
+      "Outfit is used for all headings (H1, H2, H3)",
+      "Questrial is used for body text, buttons, and navigation",
+      "Both fonts appear to be loaded from Google Fonts"
+    ],
+    "colorUsage": [
+      "Primary (#1f3d58) - Dark blue used for hero backgrounds and dark sections",
+      "Secondary (#232d34) - Darker blue-grey used for alternative dark sections",
+      "Accent (#ee6b4e) - Coral/orange used for CTAs and interactive elements",
+      "Backgrounds cycle through light variations (#f9f9f9, #fafafa, #f2f2f2, #ffffff)"
+    ],
+    "designPatterns": [
+      "Minimal border radius (3px on buttons only)",
+      "No box shadows on cards - flat design approach",
+      "Sticky header with transparent background",
+      "Full-width hero sections with background images",
+      "Alternating light/dark sections for visual rhythm",
+      "Large typography (88px H1, 48px-104px H2)",
+      "Generous whitespace with 40px horizontal padding",
+      "Content max-width constrained to 1185px"
+    ],
+    "structure": [
+      "Hero section: Full-width background image with overlay, left-aligned text",
+      "Feature grid: 4 columns with icon-above layout",
+      "Content sections: Centered content with alternating backgrounds",
+      "Product cards: Single column layout with image on right side",
+      "Testimonials: Horizontal scrolling cards with quotes",
+      "Footer: Simple centered layout with links"
+    ]
+  }
+}

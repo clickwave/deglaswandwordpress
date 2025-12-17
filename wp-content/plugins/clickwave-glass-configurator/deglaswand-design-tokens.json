@@ -1,0 +1,661 @@
+{
+  "website": {
+    "name": "Dé Glaswand",
+    "url": "https://deglaswand.nl",
+    "tagline": "Glazen Schuifwanden voor Veranda's & Tuinhuizen",
+    "analysisDate": "2025-12-02"
+  },
+  "brandIdentity": {
+    "colors": {
+      "primary": {
+        "darkBlue": {
+          "hex": "#1F3D58",
+          "usage": "Titles, headings, primary text",
+          "description": "Dark navy blue-grey for main content"
+        },
+        "accentOrange": {
+          "hex": "#EB512F",
+          "hsl": "h:10.85°, s:82.46%, l:55.29%",
+          "usage": "CTA buttons, icons, accents",
+          "description": "Energetic orange-red for calls-to-action"
+        }
+      },
+      "neutral": {
+        "white": {
+          "hex": "#FFFFFF",
+          "usage": "Backgrounds, text contrast, secondary buttons"
+        },
+        "lightGrey": {
+          "hex": "#F2F2F2",
+          "usage": "Section backgrounds, container backgrounds"
+        },
+        "lightestGrey": {
+          "hex": "#F8F8F8",
+          "usage": "Feature card backgrounds"
+        },
+        "footerGrey": {
+          "hex": "#FAFAFA",
+          "usage": "Footer background"
+        },
+        "darkGrey": {
+          "hex": "#585A61",
+          "usage": "Menu text, secondary text"
+        },
+        "footerText": {
+          "hex": "#464646",
+          "usage": "Footer text color"
+        },
+        "black": {
+          "hex": "#000000",
+          "opacity": 0.32,
+          "usage": "Hero image overlay"
+        }
+      }
+    },
+    "typography": {
+      "fontFamilies": {
+        "primary": {
+          "name": "Questrial",
+          "usage": "Body text, headings, buttons",
+          "fallback": "sans-serif",
+          "weights": ["400", "700"]
+        },
+        "accent": {
+          "name": "Cormorant Garamond",
+          "usage": "Decorative elements",
+          "fallback": "serif"
+        }
+      },
+      "fontSizes": {
+        "hero": {
+          "size": "48px",
+          "weight": "700",
+          "usage": "Main hero headline"
+        },
+        "subtitle": {
+          "size": "24px",
+          "usage": "Subheadings, section titles"
+        },
+        "body": {
+          "size": "18px",
+          "usage": "Default body text"
+        },
+        "buttons": {
+          "large": "20px",
+          "medium": "16px",
+          "small": "14px"
+        }
+      },
+      "lineHeight": {
+        "default": "1.6",
+        "headings": "1.2"
+      }
+    },
+    "logo": {
+      "filename": "TpT4z3K-200x200.png",
+      "dimensions": {
+        "original": "936x200px",
+        "compressed": "200x200px"
+      },
+      "variants": [
+        "100x200",
+        "200x200",
+        "500x500",
+        "1000x1000",
+        "2000x2000",
+        "3014x644"
+      ],
+      "alignment": "left",
+      "brandName": "Dé Glaswand"
+    }
+  },
+  "layout": {
+    "spacing": {
+      "maxContentWidth": "1120px",
+      "tileMargins": "100px",
+      "headerHeight": {
+        "desktop": "70px",
+        "mobile": "60px"
+      }
+    },
+    "grid": {
+      "type": "responsive",
+      "pattern": "card-based sections",
+      "columns": "auto-fit"
+    },
+    "effects": {
+      "parallax": true,
+      "carousels": true,
+      "transitions": "smooth"
+    }
+  },
+  "navigation": {
+    "primary": {
+      "menuItems": [
+        {
+          "label": "Home",
+          "url": "/",
+          "order": 1
+        },
+        {
+          "label": "Glazen schuifwand",
+          "url": "/glazen-schuifwand",
+          "order": 2,
+          "description": "Sliding glass walls"
+        },
+        {
+          "label": "Steellook schuifwand",
+          "url": "/steellook-schuifwand",
+          "order": 3,
+          "description": "Steel-look variant"
+        },
+        {
+          "label": "Veranda",
+          "url": "/veranda",
+          "order": 4,
+          "description": "Covered terraces"
+        },
+        {
+          "label": "Contact",
+          "url": "/contact",
+          "order": 5
+        }
+      ],
+      "style": {
+        "textColor": "#585A61",
+        "backgroundColor": "#FFFFFF",
+        "sticky": true
+      }
+    },
+    "secondary": {
+      "pages": [
+        "Products",
+        "Quotes",
+        "Advantages",
+        "Blogs",
+        "2025 Trends"
+      ]
+    },
+    "mobile": {
+      "burgerMenu": true,
+      "searchPanel": true
+    }
+  },
+  "homepageStructure": {
+    "sections": [
+      {
+        "type": "hero",
+        "id": "hero-cover",
+        "order": 1,
+        "content": {
+          "headline": "Glazen schuifwanden",
+          "subheadline": "Creëer jouw perfecte buitenruimte met glazen schuifwanden",
+          "backgroundImage": {
+            "overlay": {
+              "color": "#000000",
+              "opacity": 0.32
+            },
+            "parallax": true,
+            "formats": ["webp", "png"],
+            "sizes": ["200x200", "500x500", "1000x1000", "2000x2000"]
+          },
+          "cta": {
+            "text": "Bereken mijn prijs",
+            "url": "https://configurator.deglaswand.nl/",
+            "style": "primary"
+          }
+        },
+        "blockMapping": "core/cover"
+      },
+      {
+        "type": "features",
+        "id": "benefits-grid",
+        "order": 2,
+        "title": "Onze Voordelen",
+        "layout": "four-column-grid",
+        "items": [
+          {
+            "icon": "TapeMeasureIcon",
+            "iconColor": "#EB512F",
+            "title": "Gratis inmeten",
+            "description": "Wij meten uw glazen schuifwand gratis in en maken op locatie een gepaste offerte."
+          },
+          {
+            "icon": "BulbIcon",
+            "iconColor": "#EB512F",
+            "title": "Maatwerk",
+            "description": "Maatwerk nodig? Wij gaan elke uitdaging aan!"
+          },
+          {
+            "icon": "TruckExpressIcon",
+            "iconColor": "#EB512F",
+            "title": "Spoedmontage",
+            "description": "Wij monteren uw glazen schuifwand binnen 4 weken na het inmeten"
+          },
+          {
+            "icon": "SignEuroIcon",
+            "iconColor": "#EB512F",
+            "title": "Gratis levering",
+            "description": "En natuurlijk... Gratis levering!"
+          }
+        ],
+        "style": {
+          "backgroundColor": "#F8F8F8",
+          "cardPadding": "30px",
+          "iconSize": "48px"
+        },
+        "blockMapping": "core/columns with custom icon blocks"
+      },
+      {
+        "type": "cta-section",
+        "id": "custom-solutions",
+        "order": 3,
+        "content": {
+          "title": "Op maat gemaakte oplossingen",
+          "description": "Wij leveren maatwerk voor elke wens",
+          "cta": {
+            "text": "Bereken mijn prijs",
+            "url": "https://configurator.deglaswand.nl/",
+            "style": "primary"
+          }
+        },
+        "blockMapping": "core/group with core/buttons"
+      },
+      {
+        "type": "featured-product",
+        "id": "product-showcase",
+        "order": 4,
+        "product": {
+          "name": "Glazen schuifwand 2-rail",
+          "price": "€599,00",
+          "description": "2-rail inclusief 2 glazen deuren tot 203cm breed",
+          "image": {
+            "aspectRatio": "15:10",
+            "layout": "landscape"
+          },
+          "cta": {
+            "text": "Koop nu",
+            "style": "primary"
+          }
+        },
+        "style": {
+          "backgroundColor": "#FFFFFF",
+          "layout": "center-aligned",
+          "showFrame": true
+        },
+        "blockMapping": "woocommerce/product-card or custom product block"
+      },
+      {
+        "type": "about-us",
+        "id": "company-story",
+        "order": 5,
+        "content": {
+          "title": "Over Dé Glaswand",
+          "body": "Bij Dé Glaswand combineren wij stijl en functionaliteit door het leveren van hoogwaardige glazen schuifwanden voor veranda's, zonwering en tuinhuizen. Onze producten bieden duurzaamheid, gebruiksgemak, geïntegreerd design, luxe sfeer, woningwaarde verhoging en klantgerichtheid.",
+          "keyPoints": [
+            "Duurzaamheid",
+            "Gebruiksgemak",
+            "Geïntegreerd design",
+            "Luxe sfeer",
+            "Woningwaarde verhoging",
+            "Klantgerichtheid"
+          ]
+        },
+        "blockMapping": "core/group with core/paragraph"
+      },
+      {
+        "type": "testimonials",
+        "id": "customer-reviews",
+        "order": 6,
+        "title": "Wat onze klanten zeggen",
+        "layout": "carousel",
+        "swipeable": true,
+        "reviews": [
+          {
+            "author": "Daan",
+            "rating": 5,
+            "text": "Zeer tevreden over deze jonge ondernemer. Is een aanrader! Goede prijs kwaliteit verhouding.",
+            "avatar": true
+          },
+          {
+            "author": "Diana",
+            "rating": 5,
+            "text": "Prima service, werkt netjes, mooi resultaat.",
+            "avatar": true
+          },
+          {
+            "author": "Elibart",
+            "rating": 5,
+            "text": "Vakman die fijn meedenkt. Blij met het resultaat!",
+            "avatar": true
+          },
+          {
+            "author": "Rijndert",
+            "rating": 5,
+            "text": "Prettige samenwerking, duidelijke afspraken.",
+            "avatar": true
+          }
+        ],
+        "style": {
+          "backgroundColor": "#FFFFFF",
+          "containerBackground": "#F2F2F2",
+          "cardPadding": "20px"
+        },
+        "blockMapping": "core/query-loop with custom testimonial blocks"
+      },
+      {
+        "type": "team",
+        "id": "team-introduction",
+        "order": 7,
+        "title": "Ons Team",
+        "members": [
+          {
+            "name": "Rick",
+            "role": "Monteur",
+            "title": "Installation Specialist",
+            "bio": "Enthousiaste monteur die zich richt op zorgvuldige installatie. Hecht waarde aan kwaliteitsresultaten en klanttevredenheid door het combineren van design met functionaliteit.",
+            "photo": true
+          }
+        ],
+        "blockMapping": "core/columns with core/media-text"
+      },
+      {
+        "type": "materials-info",
+        "id": "glass-information",
+        "order": 8,
+        "title": "Materialen & Glas",
+        "content": {
+          "glassType": "10mm gehard glas (veiligheidsglas)",
+          "coating": "Poedercoating RAL 9005 / RAL 7016",
+          "accessories": "Uitgebreide accessoires en ondersteuning",
+          "warranty": "Kwaliteitsgarantie"
+        },
+        "blockMapping": "core/columns with icon blocks"
+      },
+      {
+        "type": "contact-info",
+        "id": "location-contact",
+        "order": 9,
+        "content": {
+          "phone": "06 15 24 63 83",
+          "email": "info@deglaswand.nl",
+          "hours": {
+            "weekdays": "Maandag - Zaterdag",
+            "time": "8:00 - 17:00"
+          },
+          "cta": {
+            "text": "Bereken mijn prijs",
+            "url": "https://configurator.deglaswand.nl/"
+          }
+        },
+        "blockMapping": "core/group with core/paragraph and core/buttons"
+      }
+    ]
+  },
+  "components": {
+    "buttons": {
+      "primary": {
+        "backgroundColor": "#EB512F",
+        "textColor": "#FFFFFF",
+        "borderRadius": "4px",
+        "padding": "12px 24px",
+        "fontSize": {
+          "large": "20px",
+          "medium": "16px",
+          "small": "14px"
+        },
+        "hover": {
+          "backgroundColor": "#D44527",
+          "transition": "all 0.3s ease"
+        }
+      },
+      "secondary": {
+        "backgroundColor": "transparent",
+        "textColor": "#FFFFFF",
+        "border": "2px solid #FFFFFF",
+        "borderRadius": "4px",
+        "padding": "12px 24px",
+        "hover": {
+          "backgroundColor": "rgba(255, 255, 255, 0.1)"
+        }
+      }
+    },
+    "cards": {
+      "feature": {
+        "backgroundColor": "#F8F8F8",
+        "padding": "30px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "iconColor": "#EB512F",
+        "layout": "vertical",
+        "alignment": "center"
+      },
+      "testimonial": {
+        "backgroundColor": "#FFFFFF",
+        "padding": "20px",
+        "borderRadius": "8px",
+        "boxShadow": "0 2px 8px rgba(0,0,0,0.1)",
+        "layout": "vertical"
+      },
+      "product": {
+        "backgroundColor": "#FFFFFF",
+        "aspectRatio": "15:10",
+        "layout": "landscape",
+        "showFrame": true,
+        "alignment": "center"
+      }
+    },
+    "icons": {
+      "library": [
+        {
+          "name": "TapeMeasureIcon",
+          "usage": "Free measurement service",
+          "color": "#EB512F"
+        },
+        {
+          "name": "BulbIcon",
+          "usage": "Custom solutions",
+          "color": "#EB512F"
+        },
+        {
+          "name": "TruckExpressIcon",
+          "usage": "Fast installation",
+          "color": "#EB512F"
+        },
+        {
+          "name": "SignEuroIcon",
+          "usage": "Free delivery",
+          "color": "#EB512F"
+        }
+      ],
+      "size": "48px",
+      "style": "solid"
+    }
+  },
+  "footer": {
+    "backgroundColor": "#FAFAFA",
+    "textColor": "#464646",
+    "sections": [
+      {
+        "type": "copyright",
+        "content": "© 2025 Dé Glaswand"
+      },
+      {
+        "type": "legal-links",
+        "links": [
+          {
+            "label": "Algemene Voorwaarden",
+            "url": "/algemene-voorwaarden"
+          },
+          {
+            "label": "Verzending & Betaling",
+            "url": "/verzending-betaling"
+          },
+          {
+            "label": "Retourbeleid",
+            "url": "/retourbeleid"
+          },
+          {
+            "label": "Misbruik melden",
+            "url": "/abuse"
+          }
+        ]
+      },
+      {
+        "type": "credits",
+        "content": "Powered by Lightspeed"
+      },
+      {
+        "type": "utilities",
+        "links": [
+          {
+            "label": "Cookie instellingen",
+            "action": "toggle-cookie-settings"
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "title": "Dé Glaswand - Glazen Schuifwanden voor Veranda's & Tuinhuizen",
+    "metaDescription": "Hoogwaardige glazen schuifwanden op maat. Gratis inmeten, spoedmontage binnen 4 weken. 10mm veiligheidsglas met premium coating.",
+    "keywords": [
+      "glazen schuifwand",
+      "veranda schuifwand",
+      "steellook schuifwand",
+      "tuinhuis schuifwand",
+      "glazen wand op maat"
+    ]
+  },
+  "contactInformation": {
+    "phone": {
+      "display": "06 15 24 63 83",
+      "href": "tel:+31615246383"
+    },
+    "email": {
+      "display": "info@deglaswand.nl",
+      "href": "mailto:info@deglaswand.nl"
+    },
+    "businessHours": {
+      "days": "Maandag - Zaterdag",
+      "hours": "8:00 - 17:00"
+    },
+    "social": {
+      "instagram": {
+        "platform": "Instagram",
+        "url": "#",
+        "visible": true
+      }
+    },
+    "configurator": {
+      "label": "Prijscalculator",
+      "url": "https://configurator.deglaswand.nl/"
+    }
+  },
+  "uniqueSellingPoints": [
+    {
+      "title": "Gratis inmeten",
+      "description": "Vrijblijvend bezoek op locatie voor nauwkeurige meting en offerte"
+    },
+    {
+      "title": "Maatwerk oplossingen",
+      "description": "Elke uitdaging aangaan met custom oplossingen"
+    },
+    {
+      "title": "Spoedmontage",
+      "description": "Installatie binnen 4 weken na inmeten"
+    },
+    {
+      "title": "Gratis levering",
+      "description": "Levering door hele regio zonder extra kosten"
+    },
+    {
+      "title": "Veiligheidsglas",
+      "description": "10mm gehard glas voor maximale veiligheid"
+    },
+    {
+      "title": "Premium coating",
+      "description": "Poedercoating RAL 9005/7016 kleuren"
+    }
+  ],
+  "toneAndMessaging": {
+    "brand": {
+      "personality": "Professional craftsmanship with personal touch",
+      "positioning": "De glaswand specialist - the glass wall expert",
+      "voice": "Approachable, confident, quality-focused"
+    },
+    "messaging": {
+      "primary": "Combining technical specifications with lifestyle benefits",
+      "keywords": [
+        "kwaliteit",
+        "maatwerk",
+        "duurzaamheid",
+        "klantgericht",
+        "vakmanschap"
+      ],
+      "lifestyle": "Geniet van het buitenleven - Enjoy outdoor living while protected",
+      "customerFocus": "Reliability and attention to detail"
+    },
+    "language": {
+      "primary": "Dutch (nl-NL)",
+      "style": "Professional yet warm",
+      "formality": "Informal 'je/jouw' addressing"
+    }
+  },
+  "technicalSpecifications": {
+    "imageFormats": ["webp", "png", "jpeg"],
+    "imageSizes": ["200x200", "500x500", "1000x1000", "2000x2000"],
+    "responsive": {
+      "breakpoints": {
+        "mobile": "< 768px",
+        "tablet": "768px - 1024px",
+        "desktop": "> 1024px"
+      }
+    },
+    "animations": {
+      "parallax": "enabled",
+      "carousel": "swipeable",
+      "transitions": "smooth",
+      "scrollRestoration": "auto"
+    },
+    "forms": {
+      "validation": ["email", "phone", "required"],
+      "errorStates": "visible",
+      "customCode": "supported"
+    }
+  },
+  "wordpressBlockMapping": {
+    "hero": {
+      "block": "core/cover",
+      "attributes": {
+        "overlayColor": "#000000",
+        "opacity": 32,
+        "parallax": true
+      },
+      "innerBlocks": ["core/heading", "core/paragraph", "core/buttons"]
+    },
+    "features": {
+      "block": "core/columns",
+      "columnCount": 4,
+      "innerBlocks": ["core/column > custom/icon-card"]
+    },
+    "testimonials": {
+      "block": "core/query",
+      "postType": "testimonial",
+      "layout": "carousel",
+      "innerBlocks": ["core/post-content"]
+    },
+    "ctaSection": {
+      "block": "core/group",
+      "innerBlocks": ["core/heading", "core/paragraph", "core/buttons"]
+    },
+    "aboutUs": {
+      "block": "core/group",
+      "innerBlocks": ["core/heading", "core/paragraph", "core/list"]
+    },
+    "team": {
+      "block": "core/columns",
+      "innerBlocks": ["core/media-text"]
+    }
+  }
+}

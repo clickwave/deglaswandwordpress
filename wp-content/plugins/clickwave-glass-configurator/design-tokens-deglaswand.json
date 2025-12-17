@@ -1,0 +1,239 @@
+{
+  "project": "deglaswand.nl Design Token Extraction",
+  "date": "2025-12-05",
+  "targetUrl": "https://deglaswand.nl/",
+
+  "colors": {
+    "primary": {
+      "navyBlue": {
+        "value": "#2C4D6B",
+        "description": "Dark blue section background - estimated from visual analysis",
+        "usage": "Full-width content breaker sections"
+      }
+    },
+    "neutral": {
+      "lightGray": {
+        "value": "#FAFAFA",
+        "rgb": "rgb(250, 250, 250)",
+        "description": "Footer background - extracted via computedStyle",
+        "usage": "Footer, subtle backgrounds"
+      },
+      "mediumGray": {
+        "value": "#9B9B9B",
+        "rgb": "rgb(155, 155, 155)",
+        "description": "Footer link text - extracted via computedStyle",
+        "usage": "Secondary links, muted text"
+      },
+      "darkGray": {
+        "value": "#464646",
+        "rgb": "rgb(70, 70, 70)",
+        "description": "Footer copyright text - extracted via computedStyle",
+        "usage": "Body text on light backgrounds"
+      }
+    },
+    "white": {
+      "pure": {
+        "value": "#FFFFFF",
+        "rgb": "rgb(255, 255, 255)",
+        "description": "White text on dark backgrounds",
+        "usage": "Headlines on navy blue"
+      },
+      "opacity65": {
+        "value": "rgba(255, 255, 255, 0.65)",
+        "description": "White text at 65% opacity - extracted via computedStyle",
+        "usage": "Body text on dark backgrounds for hierarchy"
+      }
+    }
+  },
+
+  "typography": {
+    "fontFamilies": {
+      "primary": {
+        "name": "Outfit",
+        "value": "Outfit, sans-serif",
+        "weights": [700],
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap",
+        "usage": "Display headlines, hero text"
+      },
+      "secondary": {
+        "name": "Questrial",
+        "value": "Questrial, system-ui, 'Segoe UI', Roboto, Arial, sans-serif",
+        "weights": [400],
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Questrial&display=swap",
+        "usage": "Body text, links, general content"
+      }
+    },
+    "fontSizes": {
+      "hero": {
+        "value": "104px",
+        "rem": "6.5rem",
+        "lineHeight": "106.2px",
+        "lineHeightRatio": 1.02,
+        "fontFamily": "Outfit",
+        "fontWeight": 700,
+        "context": "H2 'een heldere kijk' on dark section",
+        "responsive": {
+          "mobile": "48px",
+          "tablet": "72px",
+          "desktop": "104px"
+        }
+      },
+      "bodyLarge": {
+        "value": "20px",
+        "rem": "1.25rem",
+        "lineHeight": "36px",
+        "lineHeightRatio": 1.8,
+        "fontFamily": "Questrial",
+        "fontWeight": 400,
+        "context": "Paragraph text on dark section"
+      },
+      "bodyMedium": {
+        "value": "16px",
+        "rem": "1rem",
+        "lineHeight": "28px",
+        "lineHeightRatio": 1.75,
+        "fontFamily": "Questrial",
+        "fontWeight": 400,
+        "context": "Footer copyright text"
+      },
+      "bodySmall": {
+        "value": "14px",
+        "rem": "0.875rem",
+        "lineHeight": "24px",
+        "lineHeightRatio": 1.71,
+        "fontFamily": "Questrial",
+        "fontWeight": 400,
+        "context": "Footer navigation links"
+      }
+    }
+  },
+
+  "spacing": {
+    "sections": {
+      "verticalLarge": {
+        "value": "100px",
+        "rem": "6.25rem",
+        "context": "Dark section top/bottom margins"
+      },
+      "verticalMedium": {
+        "value": "30px",
+        "rem": "1.875rem",
+        "context": "Footer content wrapper margins"
+      }
+    },
+    "containers": {
+      "maxWidth": {
+        "value": "1120px",
+        "context": "Main content constraint width (both dark section and footer)"
+      },
+      "paddingHorizontal": {
+        "value": "40px",
+        "rem": "2.5rem",
+        "context": "Footer horizontal padding"
+      }
+    },
+    "typography": {
+      "headingMarginBottom": {
+        "value": "22px",
+        "rem": "1.375rem",
+        "context": "H2 hero heading bottom margin"
+      }
+    }
+  },
+
+  "components": {
+    "darkSection": {
+      "description": "Full-width content breaker with dark background",
+      "structure": {
+        "element": "div.wp-block-group",
+        "display": "grid",
+        "maxWidth": "1120px",
+        "margin": "100px auto",
+        "padding": "0",
+        "backgroundColor": "#2C4D6B",
+        "textAlign": "left"
+      },
+      "children": {
+        "heading": {
+          "element": "h2",
+          "fontFamily": "Outfit",
+          "fontSize": "104px",
+          "fontWeight": 700,
+          "lineHeight": "106.2px",
+          "color": "#FFFFFF",
+          "marginBottom": "22px"
+        },
+        "paragraph": {
+          "element": "p",
+          "fontFamily": "Questrial",
+          "fontSize": "20px",
+          "fontWeight": 400,
+          "lineHeight": "36px",
+          "color": "rgba(255, 255, 255, 0.65)",
+          "margin": "0"
+        }
+      },
+      "wordpressBlockPattern": "core/group with constrained layout"
+    },
+
+    "footer": {
+      "description": "Centered single-column footer with light gray background",
+      "structure": {
+        "element": "footer.wp-block-group",
+        "display": "block",
+        "backgroundColor": "#FAFAFA",
+        "padding": "30px 40px",
+        "textAlign": "center"
+      },
+      "children": {
+        "copyright": {
+          "element": "p",
+          "fontFamily": "Questrial",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": "28px",
+          "color": "#464646",
+          "textAlign": "center"
+        },
+        "links": {
+          "element": "a",
+          "fontFamily": "Questrial",
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "lineHeight": "24px",
+          "color": "#9B9B9B",
+          "textDecoration": "none",
+          "layout": "horizontal-inline"
+        }
+      },
+      "wordpressBlockPattern": "core/group with core/paragraph and core/navigation"
+    }
+  },
+
+  "layout": {
+    "grid": {
+      "contentWidth": "1120px",
+      "wideWidth": "1920px",
+      "gutters": "40px"
+    },
+    "breakpoints": {
+      "mobile": "320px",
+      "tablet": "768px",
+      "desktop": "1120px",
+      "wide": "1920px"
+    }
+  },
+
+  "extractionMetadata": {
+    "method": "Playwright computedStyle inspection",
+    "browser": "Chromium",
+    "viewport": "1920x1080",
+    "notes": [
+      "Dark section background color estimated visually as parent container not captured",
+      "All typography values extracted via window.getComputedStyle()",
+      "Footer uses Lightspeed platform classes (ins-tile__*)",
+      "No footer logo present in current implementation",
+      "Responsive values are recommendations based on visual hierarchy"
+    ]
+  }
+}

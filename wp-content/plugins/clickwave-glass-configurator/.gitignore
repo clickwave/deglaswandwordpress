@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+.pnpm-store/
+
+# Build outputs
+/assets/js/configurator.js
+/assets/js/*.map
+dist/
+
+# Environment files
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

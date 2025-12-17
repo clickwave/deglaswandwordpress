@@ -1,0 +1,93 @@
+{
+  "section": {
+    "element": "DIV",
+    "className": "ins-tile__wrap ins-tile__animated",
+    "dimensions": {
+      "width": 1120,
+      "height": 380.203125
+    },
+    "background": {
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%"
+    },
+    "spacing": {
+      "paddingTop": "0px",
+      "paddingRight": "0px",
+      "paddingBottom": "0px",
+      "paddingLeft": "0px",
+      "marginTop": "100px",
+      "marginBottom": "100px"
+    },
+    "layout": {
+      "display": "grid",
+      "flexDirection": "row",
+      "justifyContent": "normal",
+      "alignItems": "normal",
+      "gap": "normal"
+    }
+  },
+  "textElements": [
+    {
+      "tagName": "H2",
+      "text": "een heldere kijk",
+      "className": "ins-tile__title",
+      "typography": {
+        "fontFamily": "Outfit, sans-serif",
+        "fontSize": "104px",
+        "fontWeight": "700",
+        "lineHeight": "106.2px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "marginTop": "0px",
+        "marginBottom": "22px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px"
+      }
+    },
+    {
+      "tagName": "SPAN",
+      "text": "een heldere kijk",
+      "className": "",
+      "typography": {
+        "fontFamily": "Outfit, sans-serif",
+        "fontSize": "104px",
+        "fontWeight": "700",
+        "lineHeight": "106.2px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px"
+      }
+    },
+    {
+      "tagName": "P",
+      "text": "Bij \"dé glaswand\" brengen we stijl en functionaliteit samen met onze hoogwaardige glazen schuifwande",
+      "className": "",
+      "typography": {
+        "fontFamily": "Questrial, system-ui, \"Segoe UI\", Roboto, Arial, sans-serif, system-ui, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgba(255, 255, 255, 0.65)"
+      },
+      "spacing": {
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px"
+      }
+    }
+  ]
+}

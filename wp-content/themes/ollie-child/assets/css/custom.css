@@ -1,0 +1,556 @@
+/**
+ * De Glaswand - Custom Styles
+ * Modern, clean design with Phosphor icons
+ */
+
+/* ========================================
+   Text Color Fix for Dark Backgrounds
+   ======================================== */
+/* Force white text on primary/dark backgrounds */
+.has-primary-background-color .has-white-color,
+.has-secondary-background-color .has-white-color,
+.has-accent-background-color .has-white-color,
+.wp-block-cover .has-white-color {
+  color: #ffffff !important;
+}
+
+.has-primary-background-color h1,
+.has-primary-background-color h2,
+.has-primary-background-color h3,
+.has-primary-background-color p,
+.has-secondary-background-color h1,
+.has-secondary-background-color h2,
+.has-secondary-background-color h3,
+.has-secondary-background-color p,
+.has-accent-background-color h1,
+.has-accent-background-color h2,
+.has-accent-background-color h3,
+.has-accent-background-color p {
+  color: #ffffff !important;
+}
+
+/* ========================================
+   Phosphor Icons (via CSS)
+   ======================================== */
+@import url('https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css');
+
+/* Icon styling */
+.ph-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--wp--preset--color--accent);
+}
+
+.ph-icon-lg {
+  font-size: 32px;
+}
+
+.ph-icon-xl {
+  font-size: 48px;
+}
+
+/* ========================================
+   Modern Button Styles
+   ======================================== */
+.wp-block-button__link {
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(235, 81, 47, 0.15);
+}
+
+.wp-block-button__link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(235, 81, 47, 0.25);
+}
+
+/* Primary button */
+.wp-block-button.is-style-fill .wp-block-button__link,
+.wp-block-button:not(.is-style-outline) .wp-block-button__link {
+  background: var(--wp--preset--color--accent);
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* Accent button always has white text */
+.wp-block-button__link.has-accent-background-color,
+.wp-block-button__link.has-accent-background-color.has-white-color {
+  color: #ffffff !important;
+}
+
+/* Outline button */
+.wp-block-button.is-style-outline .wp-block-button__link {
+  background: transparent;
+  border: 2px solid currentColor;
+  box-shadow: none;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+  background: var(--wp--preset--color--accent);
+  color: #fff !important;
+  border-color: var(--wp--preset--color--accent);
+  box-shadow: 0 4px 12px rgba(235, 81, 47, 0.25);
+}
+
+/* Outline button on dark backgrounds - white text and border */
+.wp-block-cover .wp-block-button.is-style-outline .wp-block-button__link,
+.has-primary-background-color .wp-block-button.is-style-outline .wp-block-button__link,
+.has-secondary-background-color .wp-block-button.is-style-outline .wp-block-button__link,
+.has-accent-background-color .wp-block-button.is-style-outline .wp-block-button__link {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.wp-block-cover .wp-block-button.is-style-outline .wp-block-button__link:hover,
+.has-primary-background-color .wp-block-button.is-style-outline .wp-block-button__link:hover,
+.has-secondary-background-color .wp-block-button.is-style-outline .wp-block-button__link:hover,
+.has-accent-background-color .wp-block-button.is-style-outline .wp-block-button__link:hover {
+  background: #ffffff !important;
+  color: var(--wp--preset--color--primary) !important;
+  border-color: #ffffff !important;
+}
+
+/* White button (for dark backgrounds) */
+.wp-block-button.has-white-background-color .wp-block-button__link {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wp-block-button.has-white-background-color .wp-block-button__link:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================
+   Hero Section Improvements
+   ======================================== */
+.wp-block-cover {
+  position: relative;
+}
+
+.wp-block-cover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(31, 61, 88, 0.3) 0%, rgba(31, 61, 88, 0.6) 100%);
+  pointer-events: none;
+}
+
+.wp-block-cover__inner-container {
+  position: relative;
+  z-index: 1;
+}
+
+.wp-block-cover h1,
+.wp-block-cover .wp-block-heading {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.wp-block-cover p {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================
+   Dark Blue Break Section
+   ======================================== */
+/* Ensure white text on secondary (dark blue) backgrounds */
+.has-secondary-background-color h1,
+.has-secondary-background-color h2,
+.has-secondary-background-color h3,
+.has-secondary-background-color p,
+.has-secondary-background-color .has-white-color {
+  color: #ffffff !important;
+}
+
+/* Dark blue section text effects */
+.has-secondary-background-color h2 {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Outline button on dark background */
+.has-secondary-background-color .wp-block-button.is-style-outline .wp-block-button__link {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+  background: transparent !important;
+}
+
+.has-secondary-background-color .wp-block-button.is-style-outline .wp-block-button__link:hover {
+  background: #ffffff !important;
+  color: var(--wp--preset--color--secondary) !important;
+}
+
+/* Regular button on dark background */
+.has-secondary-background-color .wp-block-button:not(.is-style-outline) .wp-block-button__link {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.has-secondary-background-color .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================
+   Cards & Feature Boxes
+   ======================================== */
+.feature-card,
+.wp-block-group.has-background {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(31, 61, 88, 0.1);
+}
+
+/* USP Cards */
+.usp-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(31, 61, 88, 0.06);
+  transition: all 0.2s ease;
+}
+
+.usp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(31, 61, 88, 0.1);
+}
+
+.usp-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: rgba(235, 81, 47, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  color: var(--wp--preset--color--accent);
+  font-size: 24px;
+}
+
+/* Product Cards */
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(31, 61, 88, 0.06);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(31, 61, 88, 0.12);
+}
+
+.product-card img {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(31, 61, 88, 0.06);
+}
+
+.testimonial-card .stars {
+  color: #fbbf24;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+/* ========================================
+   Header Improvements
+   ======================================== */
+.site-header,
+header.wp-block-group {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Logo sizing */
+.site-logo img,
+header .wp-block-image img {
+  height: auto;
+  max-height: 48px;
+  width: auto;
+}
+
+/* Navigation */
+.wp-block-navigation a {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.wp-block-navigation a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--wp--preset--color--accent);
+  transition: width 0.2s ease;
+}
+
+.wp-block-navigation a:hover::after {
+  width: 100%;
+}
+
+/* ========================================
+   Footer Improvements
+   ======================================== */
+
+/* Footer logo fix - maintain aspect ratio */
+footer .footer-logo img,
+footer .wp-block-image img[alt="De Glaswand"] {
+  height: 50px !important;
+  width: auto !important;
+  max-width: 280px !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+}
+
+footer .wp-block-social-links a {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+footer .wp-block-social-links a:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+/* ========================================
+   Form Styling (Contact Form 7)
+   ======================================== */
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form input[type="tel"],
+.wpcf7-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--wp--preset--color--border);
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: #fff;
+}
+
+.wpcf7-form input:focus,
+.wpcf7-form textarea:focus {
+  outline: none;
+  border-color: var(--wp--preset--color--accent);
+  box-shadow: 0 0 0 3px rgba(235, 81, 47, 0.1);
+}
+
+.wpcf7-form input[type="submit"] {
+  background: var(--wp--preset--color--accent);
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wpcf7-form input[type="submit"]:hover {
+  background: var(--wp--preset--color--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(235, 81, 47, 0.25);
+}
+
+.wpcf7-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--wp--preset--color--primary);
+}
+
+.wpcf7-form p {
+  margin-bottom: 20px;
+}
+
+/* ========================================
+   Responsive Adjustments
+   ======================================== */
+
+/* Mobile Navigation Improvements */
+@media (max-width: 1024px) {
+  /* Header adjustments for tablets and mobile */
+  .site-header,
+  header.wp-block-group {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Logo size on mobile */
+  .site-logo img,
+  header .wp-block-image img {
+    max-height: 40px;
+  }
+
+  /* Hamburger menu button styling */
+  .wp-block-navigation__responsive-container-open {
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: transparent;
+    border: 1px solid rgba(31, 61, 88, 0.1);
+    transition: all 0.2s ease;
+  }
+
+  .wp-block-navigation__responsive-container-open:hover {
+    background: rgba(31, 61, 88, 0.05);
+    border-color: rgba(31, 61, 88, 0.2);
+  }
+
+  /* Mobile menu overlay */
+  .wp-block-navigation__responsive-container.is-menu-open {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+  }
+
+  /* Mobile menu close button */
+  .wp-block-navigation__responsive-container-close {
+    padding: 12px;
+    border-radius: 6px;
+    background: rgba(31, 61, 88, 0.05);
+  }
+
+  /* Mobile navigation links */
+  .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content {
+    padding: 32px 24px;
+  }
+
+  .wp-block-navigation__responsive-container .wp-block-navigation-item {
+    margin: 8px 0;
+  }
+
+  .wp-block-navigation__responsive-container .wp-block-navigation-item a {
+    padding: 12px 16px;
+    border-radius: 8px;
+    display: block;
+    transition: background 0.2s ease;
+  }
+
+  .wp-block-navigation__responsive-container .wp-block-navigation-item a:hover {
+    background: rgba(31, 61, 88, 0.05);
+  }
+
+  /* CTA button in mobile menu */
+  .wp-block-navigation__responsive-container .wp-block-button {
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .wp-block-navigation__responsive-container .wp-block-button__link {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Footer responsive */
+@media (max-width: 782px) {
+  .wp-block-cover h1 {
+    font-size: clamp(28px, 8vw, 40px) !important;
+  }
+
+  .wp-block-columns {
+    gap: 32px !important;
+  }
+
+  .usp-card,
+  .product-card,
+  .testimonial-card {
+    margin-bottom: 16px;
+  }
+
+  /* Footer columns stack vertically on mobile */
+  footer .wp-block-column {
+    margin-bottom: 32px !important;
+  }
+
+  /* Footer text alignment on mobile */
+  footer .wp-block-group.alignwide {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 600px) {
+  /* Header even more compact */
+  .site-header,
+  header.wp-block-group {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .site-logo img,
+  header .wp-block-image img {
+    max-height: 36px;
+  }
+}
+
+/* ========================================
+   Animations
+   ======================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Scroll animations (use with Intersection Observer) */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animate.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================================
+   Utility Classes
+   ======================================== */
+.text-gradient {
+  background: linear-gradient(135deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.rounded-xl {
+  border-radius: 16px;
+}
+
+.rounded-2xl {
+  border-radius: 24px;
+}
