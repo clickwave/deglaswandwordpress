@@ -1,6 +1,3 @@
-# WordPress config met database credentials
-wp-config.php
-
 # Uploads (media bestanden)
 wp-content/uploads/
 
